@@ -1,5 +1,5 @@
 This is my first self-built website, which was mainly implemented using HTML & CSS with just a little JavaScript added.
-For this website I first created a screen design, which I then tried to recreate.
+I have selected a baking blog as my topic. For this website I first created a screen design, which I then tried to recreate.
 
 Three pages were implemented:
 - the home page (index.html)
