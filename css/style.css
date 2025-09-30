@@ -1,0 +1,662 @@
+/*---------------- ALLGEMEINES -----------------*/
+
+body {
+    background-color: #F8EDEB;
+    margin: 0;
+}
+
+main,
+header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav,
+footer {
+    background-color: #9D8189;
+    height: 5.5vw;
+}
+
+
+/*------------ HEADER, ICONS, LOGO ------------*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*height: 18vw;*/
+}
+
+.icons-left {
+    display: flex;
+    width: 30%;
+}
+
+.icons-left a {
+    margin-right: 1%;
+}
+
+.mail,
+.insta,
+.pin {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 4vw;
+    width: 100%;
+}
+
+.mail {
+    background-image: url(../images/mail.png);
+}
+
+.insta {
+    background-image: url(../images/insta.png);
+}
+
+.pin {
+    background-image: url(../images/pinterest.png);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 18vw;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.icons-right {
+    display: flex;
+    align-items: center;
+}
+
+
+/*-------------- SUCHE MIT EINGABE ------------*/
+
+.icon-suche {
+    background-image: url(../images/suche.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 4vw;
+    width: 6vw;
+}
+
+.searchbar {
+    display: flex;
+    flex: 1;
+    height: 2.5vw;
+    width: 8vw;
+    margin-right: 3vw;
+    background-color: #9D8189;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.searchbar input {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    border-radius: 1em;
+    outline: none;
+
+}
+
+.searchbar input::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8EDEB;
+    font-size: 1.5vw;
+}
+
+
+/*---------------- DROPDOWN MENÜ ------------------*/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownmenu {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: #F8EDEB;
+    text-decoration: none;
+    font-size: 2.5vw;
+    padding: 0.4em;
+    margin: 0%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #F8EDEB;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7vw;
+    margin: 0%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    background: #534045ba;
+}
+
+.dropdown>div>a:hover {
+    background: #9D8189;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav>div {
+    flex: 1;
+}
+
+nav>div>a {
+    background: #9D8189;
+}
+
+nav>div>a:hover {
+    background: #9D8189;
+}
+
+nav a {
+    display: block;
+    padding: 1em 0.4em;
+    text-align: center;
+    color: #F8EDEB;
+    text-decoration: none;
+}
+
+/*------------- MEDIA QUERIES BEI BILDSCHIRMEN 1150px ----------*/
+/*wird zwar kleinere Schrift aber nicht in der Mitte von Nav-Balken...*/
+@media only screen and (max-width: 1150px) {
+    .dropdownmenu {
+        text-align: center;
+    }
+
+}
+
+
+/*--------- BURGER-BUTTON MENÜ -------------*/
+
+#menu-burger {
+    width: 22vw;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #534045ba 0%, #9D8189 100%);
+    ;
+}
+
+#menu-burger>ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+#menu-burger>ul>li {
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+#menu-burger>ul>li>a {
+    padding: 1vw;
+
+}
+
+#menu-burger a,
+#menu-burger a:visited {
+    color: #F8EDEB;
+    text-decoration: none;
+}
+
+nav#menu-burger a:hover {
+    background-color: #9D8189;
+    width: 23vw;
+}
+
+/*BurgerButton*/
+#burger {
+    position: absolute;
+    right: 8.5vw;
+    top: 7.5vw;
+    width: 3vw;
+    height: 3vw;
+    color: #9D8189;
+    font-size: 3vw;
+    text-align: center;
+}
+
+/*Kreuz zum Schließen*/
+#geschlossen {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    color: #9D8189;
+    font-size: 2vw;
+}
+
+.hide {
+    display: none;
+}
+
+.dropdown-burger:hover .dropdown-content-burger {
+    display: block;
+}
+
+.dropdownmenu-burger {
+    position: relative;
+}
+
+
+/*----------------- TITELBILD ---------------------*/
+
+#titelbild {
+    width: 100%;
+    height: 374px;
+    /*transition: height 1s;*/
+    min-width: 50%;
+    min-height: 200px;
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 1100px) {
+    #titelbild {
+        height: auto;
+        width: auto;
+        margin: -0.2%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #titelbild {
+        height: auto;
+        width: auto;
+        margin: -4.7%;
+    }
+}
+
+
+/*------------------- TRENNLINIE ------------------*/
+
+.trennlinie {
+    width: 100%;
+    height: 0.2vw;
+    background-color: #9D8189;
+    margin: 1.5vw 0vw;
+}
+
+
+/*----------------- SCHRIFT ------------------*/
+
+p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #686868;
+    text-align: center;
+    font-size: 2vw;
+    line-height: 1.4em;
+    margin: 1% 0%;
+}
+
+a {
+    font-family: 'Cormorant Garamond', serif;
+    color: #A4A272;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2vw;
+    line-height: 1.4em;
+    margin: 1% 0%;
+}
+
+h1 {
+    font-family: 'Imperial Script', cursive;
+    color: #9D8189;
+    font-weight: normal;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 0.4em;
+    margin: 3.5% 0%;
+}
+
+h2,
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8EDEB;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 9vw;
+    letter-spacing: 0.5vh;
+    margin: -2.7%;
+}
+
+h3 {
+    font-size: 4vw;
+    margin: 1.8%;
+}
+
+
+/*------------- WO BEFINDE ICH MICH ---------------*/
+
+.breadcrumbs {
+    margin-bottom: 0.5%;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #686868;
+    font-size: 1.5vw;
+}
+
+
+/*------------ HOME SPALTE ERDBEERTORTE ------------*/
+
+.container-home {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1% auto;
+    justify-content: space-between;
+}
+
+.homerechts {
+    flex: 1;
+    text-align: center;
+    margin: 3% 0% 2% 0%;
+    width: 65%;
+}
+
+.homelinks {
+    flex: 1;
+    width: 35%;
+    background-image: url(../images/erdbeertorte.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: auto;
+    min-height: 300px;
+    margin: 0.5% 1% 0.5% 5%;
+}
+
+
+/*-------- MEDIA QUERIES BEI KLEINEREN BILDSCHIRMEN (800px) -----------*/
+
+@media only screen and (max-width: 800px) {
+    .container-home {
+        flex-direction: column-reverse;
+    }
+
+    .homelinks,
+    .homerechts {
+        width: 100%;
+        margin: 2% 0;
+        height: auto;
+    }
+
+    .homelinks {
+        background-position: center;
+    }
+}
+
+
+/*--------- PFEIL NACH OBEN ----------*/
+
+#seitenanfang img {
+    height: 4vw;
+}
+
+#seitenanfang {
+    display: flex;
+    margin-left: 103%;
+}
+
+
+/*----------------- FOOTER ------------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+    background-color: #9D8189;
+    margin-top: 3vw;
+}
+
+.footertext {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8EDEB;
+    text-align: left;
+    font-size: 2vw;
+    text-decoration: none;
+    flex: 1;
+}
+
+.copyright {
+    height: 4vw;
+    width: 5vw;
+    background-image: url(../images/copyright.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-right: 1%;
+}
+
+.footerlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+.footerlinks a {
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8EDEB;
+    text-align: center;
+    font-size: 2vw;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+
+/*--------------- ERDBEERTORTE SEITE ---------------*/
+/*------------------ 3 BILDER NEBENEINANDER -----------*/
+
+.container-bilder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1% auto;
+}
+
+.container-bilder img {
+    width: 30%;
+    height: auto;
+    margin: 1% 1.5%;
+    align-items: center;
+}
+
+
+/*----------------- HOVEREFFEKT BILDER ----------------*/
+
+.container-bilder2 {
+    display: flex;
+    padding: 1%;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+}
+
+.container-bilder2 .hovereffekt {
+    position: relative;
+    overflow: hidden;
+    margin: 1% -1%;
+}
+
+.container-bilder2 .hovereffekt img {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    align-items: center;
+}
+
+.container-bilder2 .overlay {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #F8EDEB90;
+    padding: 50%;
+    height: 80%;
+}
+
+.container-bilder2 .hovereffekt:hover .overlay,
+.container-bilder2 .hovereffekt:hover .hovereffekt-content {
+    display: block;
+}
+
+.container-bilder2 .hovereffekt-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    background-color: #F8EDEB;
+    padding: 20% 10%;
+}
+
+.hovereffekt-content h1 {
+    color: #9D8189;
+    line-height: 100%;
+}
+
+.hovereffekt-content a {
+    text-decoration: none;
+}
+
+
+/*----------------- ZUTATENLISTE --------------*/
+
+.container-zutatenliste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    margin-left: 5vw;
+    margin-top: 1.5vw;
+}
+
+.container-zutatenliste p {
+    font-family: 'Cormorant Garamond', serif;
+    color: #686868;
+    font-size: 2vw;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.container-zutatenliste ul {
+    padding-left: 5%;
+    margin-top: 0;
+}
+
+.container-zutatenliste li {
+    font-family: 'Cormorant Garamond', serif;
+    color: #686868;
+    font-size: 2vw;
+    line-height: 1.2em;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+
+
+/*------------ REZEPTE MAIN BEREICH --------------*/
+
+#main-rezepte {
+    background: #9D8189;
+    display: block;
+    width: 100%;
+}
+
+.vier-icons,
+.drei-icons,
+.text-vier-icons,
+.text-drei-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vier-icons,
+.drei-icons {
+    width: 80%;
+    margin: 1% 10%;
+}
+
+.text-vier-icons,
+.text-drei-icons {
+    margin: 1% 0%;
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.text-vier-icons h1,
+.text-drei-icons h1 {
+    color: #F8EDEB;
+    font-size: 5vw;
+    width: 50%;
+    line-height: 100%;
+}
+
+.oma h1 {
+    width: 150%;
+    margin: 0% -20%;
+}
+
+.text-vier-icons a,
+.text-drei-icons a {
+    text-decoration: none;
+}
+
+.vier-icons-bilder img,
+.drei-icons-bilder img {
+    height: 10vw;
+    margin: 5% -50%;
+}

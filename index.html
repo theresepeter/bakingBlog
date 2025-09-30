@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Nonnas Foodblog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Imperial+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="icons-left">
+            <a href="https://outlook.office.com/mail/" class="mail"> </a>
+            <a href="https://www.instagram.com/" class="insta"> </a>
+            <a href="https://www.pinterest.at/" class="pin"> </a>
+        </div>
+
+        <div id="logo" class="logo">
+            <a href="index.html"> </a>
+        </div>
+
+        <div class="icons-right">
+            <div class="icon-suche"></div>
+            <div class="searchbar">
+                <input type="text" placeholder="Suche...">
+                <a href="#"> </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-homeseite">
+
+        <div><a href="#" class="dropdownmenu">About me</a></div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdownmenu">Restaurants</a>
+            <div class="dropdown-content">
+                <a href="#">Meine Favoriten</a>
+                <a href="#">Schon probiert?</a>
+                <a href="#">Perfekt mit Freunden/Familie</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="rezepte.html" class="dropdownmenu">Rezepte</a>
+            <div class="dropdown-content">
+                <a href="#">Bowls</a>
+                <a href="#">Drinks</a>
+                <a href="#">Fisch</a>
+                <a href="#">Fleisch</a>
+                <a href="#">Frühstück</a>
+                <a href="#">Grillereien</a>
+                <a href="#">Kuchen</a>
+                <a href="#">Omas Geheimrezepte</a>
+                <a href="#">Snacks</a>
+                <a href="#">Vegan</a>
+                <a href="#">Vegetarisch</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#" class="dropdownmenu">Shit happens</a>
+            <div class="dropdown-content">
+                <a href="#">Bei der Vorbereitung</a>
+                <a href="#">Bei der Zubereitung</a>
+                <a href="#">Beim Backen</a>
+                <a href="#">Beim Grillen</a>
+                <a href="#">Beim Kochem am Herd</a>
+                <a href="#">Beim Kochen im Backrohr</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav id="menu-burger" class="hide">
+        <a href="javascript:void(0);" onclick="hideMenu()">
+            <div id="geschlossen">
+                <i class="fas fa-times"></i>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About me</a></li>
+
+            <li class="dropdown-burger">
+                <a href="#" class="dropdownmenu-burger">Restaurants</a>
+            </li>
+
+            <li class="dropdown-burger">
+                <a href="rezepte.html" class="dropdownmenu-burger">Rezepte</a>
+            </li>
+
+            <li class="dropdown-burger">
+                <a href="#" class="dropdownmenu-burger">Shit happens</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="burger-content">
+        <a href="javascript:void(0);" onclick="showMenu()">
+            <div id="burger"><i class="fas fa-bars"></i></div>
+        </a>
+    </div>
+
+    <main>
+        <div id="titelbild"></div>
+
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="trennlinie"></div>
+        <h1>Hey, schön dass du da bist!</h1>
+        <div class="trennlinie"></div>
+
+        <p>Ich bin Thesi und ich liebe es zu essen!</p>
+        <p>Egal ob es selbst gekocht beziehungsweise gebacken ist oder ob es ein Besuch in einem tollen<br>
+            Restaurant ist. Essen ist einfach etwas Schönes! Vor allem, wenn man in Gesellschaft genießt.</p>
+        <p>Auf diesem Foodblog findet ihr nicht nur meine Lieblingsrezepte, sondern auch Restauranttipps<br>
+            und ganz wichtig, was zu tun ist, wenn beim Kochen oder Backen etwas schief läuft.<br>
+            Es ist ganz normal, denn
+            <a href="shit-happens.html">shit happens</a>
+            , sogar bei mir! Man muss nur Ruhe bewahren und etwas<br>
+            improvisieren und im Nu hat man etwas Neues kreiert.
+        </p>
+        <p>Ich wünsche euch ganz viel Spaß beim Durchschauen!</p>
+
+        <div class="trennlinie"></div>
+        <h1>Latest News</h1>
+        <div class="trennlinie"></div>
+
+        <div class="container-home">
+            <div class="homelinks"></div>
+            <div class="homerechts">
+                <p>Mein derzeit absolutes Lieblingsrezept findet ihr hier:</p>
+                <a href="erdbeertorte.html">Erdbeertorte</a>
+                <p> Meine Oma hat die Torte immer für unsere<br>
+                    Geburtstagsfeiern gemacht und sie kam immer<br>
+                    super bei meinen Freunden an!</p>
+                <p> Sie ist mega einfach zu machen, schmeckt fantastisch und sieht noch dazu himmlisch aus!</p>
+                <p>Perfekt als Dessert beim Sommerfest.</p>
+                <p>Kleiner Tipp:</p>
+                <p>Gerne auch mal mit Himbeeren ausprobieren!</p>
+            </div>
+        </div>
+
+        <div class="trennlinie"></div>
+
+        <a href=#top id="seitenanfang">
+            <img src="images/pfeil.png" alt="pfeilnachoben">
+        </a>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="copyright"></div>
+            <div class="footertext">2023 Therésè Peter</div>
+            <div class="footerlinks">
+                <a href="agbs.html">AGBs</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

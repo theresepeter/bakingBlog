@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Nonnas Foodblog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Imperial+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="icons-left">
+            <a href="https://outlook.office.com/mail/" class="mail"> </a>
+            <a href="https://www.instagram.com/" class="insta"> </a>
+            <a href="https://www.pinterest.at/" class="pin"> </a>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"> </a>
+        </div>
+
+        <div class="icons-right">
+            <div class="icon-suche"></div>
+            <div class="searchbar">
+                <input type="text" placeholder="Suche...">
+                <a href="#"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <h2>Rezepte</h2>
+    </nav>
+
+    <nav id="menu-burger" class="hide">
+        <a href="javascript:void(0);" onclick="hideMenu()">
+            <div id="geschlossen">
+                <i class="fas fa-times"></i>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About me</a></li>
+
+            <li class="dropdown-burger">
+                <a href="#" class="dropdownmenu-burger">Restaurants</a>
+            </li>
+
+            <li class="dropdown-burger">
+                <a href="rezepte.html" class="dropdownmenu-burger">Rezepte</a>
+            </li>
+
+            <li class="dropdown-burger">
+                <a href="#" class="dropdownmenu-burger">Shit happens</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="burger-content">
+        <a href="javascript:void(0);" onclick="showMenu()">
+            <div id="burger"><i class="fas fa-bars"></i></div>
+        </a>
+    </div>
+
+    <main>
+        <div id="titelbild"></div>
+
+        <div class="breadcrumbs">
+            <a href="index.html">Home / </a>
+            <a href="rezepte.html">Rezepte</a>
+        </div>
+
+        <div id="main-rezepte">
+            <div class="vier-icons">
+                <a href="#" class="vier-icons-bilder"><img src="images/fruehstueck.png" alt="Icons Frühstück"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/snacks.png" alt="Icons Snacks"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/drinks.png" alt="Icons Drinks"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/kuchen.png" alt="Icons Kuchen"></a>
+            </div>
+
+            <div class="text-vier-icons">
+                <a href="#">
+                    <h1>Frühstück</h1>
+                </a>
+                <a href="#">
+                    <h1>Snacks</h1>
+                </a>
+                <a href="#">
+                    <h1>Drinks</h1>
+                </a>
+                <a href="#">
+                    <h1>Kuchen</h1>
+                </a>
+            </div>
+
+            <div class="drei-icons">
+                <a href="#" class="drei-icons-bilder"><img src="images/fleisch.png" alt="Icons Fleisch"></a>
+                <a href="#" class="drei-icons-bilder"><img src="images/oma.png" alt="Icons Omas Geheimrezepte"></a>
+                <a href="#" class="drei-icons-bilder"><img src="images/vegetarisch.png" alt="Icons Vegetarisch"></a>
+            </div>
+
+            <div class="text-drei-icons">
+                <a href="#">
+                    <h1>Fleisch</h1>
+                </a>
+                <a href="#" class="oma">
+                    <h1>Omas Geheimrezepte</h1>
+                </a>
+                <a href="#">
+                    <h1>Vegetarisch</h1>
+                </a>
+            </div>
+
+            <div class="vier-icons">
+                <a href="#" class="vier-icons-bilder"><img src="images/vegan.png" alt="Icons Vegan"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/bowls.png" alt="Icons Bowls"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/grillerein.png" alt="Icons Grillerein"></a>
+                <a href="#" class="vier-icons-bilder"><img src="images/fisch.png" alt="Icons Fisch"></a>
+            </div>
+
+            <div class="text-vier-icons">
+                <a href="#">
+                    <h1>Vegan</h1>
+                </a>
+                <a href="#">
+                    <h1>Bowls</h1>
+                </a>
+                <a href="#">
+                    <h1>Grillereien</h1>
+                </a>
+                <a href="#">
+                    <h1>Fisch</h1>
+                </a>
+            </div>
+        </div>
+
+        <a href=#top id="seitenanfang">
+            <img src="images/pfeil.png" alt="pfeilnachoben">
+        </a>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="copyright"></div>
+            <div class="footertext">2023 Therésè Peter</div>
+            <div class="footerlinks">
+                <a href="agbs.html">AGBs</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
