@@ -12,3 +12,11 @@ I created the content myself, i.e. I wrote the texts, took the pictures, and cre
 
 You can view the baking blog at this link:
 https://theresepeter.github.io/bakingBlog/
+
+This repository is part of a study project at the St. Pölten University of Applied Sciences.
+The aim was to implement functionalities and learn about the underlying technologies, not to develop a productive system.
+
+Note on security & data
+- Sample passwords and test data are visible
+- No real access data or sensitive information is included
+- Security concepts (hashing, authentication, input validation, etc.) are simplified
